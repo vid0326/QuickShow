@@ -1,0 +1,15 @@
+/* animations.css */
+
+.animate-glow-custom {
+  animation: glow-effect 2s ease-in-out infinite;
+}
+
+@keyframes glow-effect {
+  0%, 100% {
+    /* Using indigo-500 color for the glow. You can change this! */
+    text-shadow: 0 0 5px rgba(99, 102, 241, 0.3), 0 0 10px rgba(99, 102, 241, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(129, 140, 248, 0.7), 0 0 30px rgba(129, 140, 248, 0.5);
+  }
+}

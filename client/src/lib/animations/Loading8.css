@@ -1,0 +1,20 @@
+/* animations.css */
+
+.animate-unfold-custom {
+  /* Set the origin point for the transform */
+  transform-origin: top;
+  animation: unfold-effect 0.8s ease-out forwards;
+}
+
+@keyframes unfold-effect {
+  from {
+    /* Start folded (scaled to zero on the Y axis) and transparent */
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    /* Unfold to full height and opaque */
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

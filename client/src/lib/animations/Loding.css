@@ -1,0 +1,21 @@
+.wavy-text {
+  /* Use flexbox to keep letters aligned nicely */
+  display: flex;
+}
+
+.wavy-letter {
+  position: relative;
+  display: inline-block;
+  /* Apply the animation */
+  animation: wave-bounce 1.4s infinite;
+}
+
+/* Define the animation keyframes */
+@keyframes wave-bounce {
+  0%, 60%, 100% {
+    transform: translateY(100px);
+  }
+  30% {
+    transform: translateY(-200px);
+  }
+}
